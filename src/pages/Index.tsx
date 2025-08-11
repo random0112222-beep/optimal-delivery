@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Map, Fuel, Clock, BarChart3 } from "lucide-react";
 import SEO from "@/components/SEO";
 
@@ -12,12 +11,12 @@ const Index = () => {
       />
       <header className="w-full border-b bg-background/60 backdrop-blur supports-[backdrop-filter]:bg-background/40">
         <nav className="container mx-auto flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-2 story-link">
+          <a href="/" className="flex items-center gap-2 story-link">
             <span className="text-base font-semibold tracking-tight">Logistics Optimizer</span>
-          </Link>
+          </a>
           <div className="flex items-center gap-3">
-            <Link to="/optimizer"><Button variant="secondary" size="sm">Open Optimizer</Button></Link>
-            <Link to="/auth"><Button variant="default" size="sm">Sign in</Button></Link>
+            <a href="/optimizer"><Button variant="secondary" size="sm">Open Optimizer</Button></a>
+            <a href="/auth"><Button variant="default" size="sm">Sign in</Button></a>
           </div>
         </nav>
       </header>
@@ -32,8 +31,8 @@ const Index = () => {
               Optimize multi‑vehicle delivery routes with capacities and time windows. Minimize distance and fuel while visualizing results on an interactive map.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link to="/auth"><Button variant="hero" size="lg" className="hover-scale">Get started free</Button></Link>
-              <Link to="/optimizer"><Button variant="outline" size="lg" className="hover-scale">Try the Optimizer</Button></Link>
+              <a href="/auth"><Button variant="hero" size="lg" className="hover-scale">Get started free</Button></a>
+              <a href="/optimizer"><Button variant="outline" size="lg" className="hover-scale">Try the Optimizer</Button></a>
             </div>
           </div>
 
